@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/code  # This line is crucial
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build: ./frontend/csv_uploader_frontend
+    volumes:
+      - ./frontend/csv_uploader_frontend:/app  # Mount the frontend directory to the container
+    ports:
+      - "3000:3000"
