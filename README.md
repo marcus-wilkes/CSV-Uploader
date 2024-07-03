@@ -1,6 +1,7 @@
 
 
 Running the Project (with Docker):
+    
     docker-compose build
     docker-compose up
     #For creating superuser
@@ -11,6 +12,7 @@ Running the Project (with Docker):
 Running th Project (without Docker):
 
 For backend:
+    
         cd backend
         python3 -m venv env
         source env/bin/activate
@@ -20,6 +22,7 @@ For backend:
         python manage.py runserver
 
 For frontend:
+        
         cd frontend/csv_uploader_frontend
         npm i
         npm start
